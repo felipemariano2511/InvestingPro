@@ -1,0 +1,122 @@
+{
+	"info": {
+		"_postman_id": "c7c7feba-3fdb-4462-a870-749f587308f4",
+		"name": "InvestingPro",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "43766876",
+		"_collection_link": "https://felipemariano-5136873.postman.co/workspace/Felipe-Mariano's-Workspace~533e7d92-5dbf-45de-8402-37704dd7e01a/collection/43766876-c7c7feba-3fdb-4462-a870-749f587308f4?action=share&source=collection_link&creator=43766876"
+	},
+	"item": [
+		{
+			"name": "BuscarTodosInvestimentos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/investimentos",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"investimentos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BuscarInvestimento",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/investimentos/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"investimentos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CadastrarInvestimento",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"MXRF11\",\r\n    \"startDate\" : \"2004-11-24\",\r\n    \"profitability\" : 0.97,\r\n    \"initialInvestment\" : 12000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/investimentos",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"investimentos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AtualizarInvestimento",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"MXRF11\",\r\n    \"startDate\" : \"2004-11-24\",\r\n    \"profitability\" : 0.97,\r\n    \"initialInvestment\" : 200000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/investimentos/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"investimentos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeletarInvestimento",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/investimentos/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"investimentos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
